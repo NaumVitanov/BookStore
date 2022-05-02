@@ -75,20 +75,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(47, 36);
+            this.label1.Location = new System.Drawing.Point(30, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 15);
+            this.label1.Size = new System.Drawing.Size(103, 15);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Name";
+            this.label1.Text = "Name of the book";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(47, 84);
+            this.label2.Location = new System.Drawing.Point(30, 84);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 15);
+            this.label2.Size = new System.Drawing.Size(93, 15);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Year";
+            this.label2.Text = "Year of the book";
             // 
             // textBox3
             // 
