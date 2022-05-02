@@ -1,8 +1,7 @@
 ﻿using Book_Store_App.Models;
 
-
 Console.WriteLine("Enter book Name:");
-Book book = new (Console.ReadLine() , 239 );
+Book book = new(Console.ReadLine(), 239);
 
 Console.WriteLine("Enter book Year:");
 book.Year = Convert.ToInt32(Console.ReadLine());
@@ -15,9 +14,6 @@ shelf[1] = book;
 
 Console.WriteLine(shelf.Count(x => x != null));
 
-//foreach (var asd in shelf)
-//{
-//    Console.WriteLine(asd);
-//}
+/* Да добавим 2 книги с по 4 въпроса. След добавяне да изписва колко книги има в списъка. */
 
-/* Да добавим 2 книги , 4 въпроса , след добавяне да изписва колко книги има в списъка.*/
+Console.WriteLine(shelf[0].Name);
