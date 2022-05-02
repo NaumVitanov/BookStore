@@ -32,7 +32,7 @@ namespace WinFormsApp1
             
             foreach (var Book in books)
             {
-                textBox3.Text =  textBox3.Text + (Book.Name + Book.Year)+Environment.NewLine;
+                textBox3.Text =  textBox3.Text  + "Name of the book:" + Book.Name + Environment.NewLine + "Year of the book:" + Book.Year + Environment.NewLine + Environment.NewLine;
                 
             }
         }
