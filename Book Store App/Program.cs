@@ -1,13 +1,23 @@
-﻿using Book_Store_App;
-
-Library Book1 = new("Harry Potter 1" , "Red" , 256 , 1996);
-
-Library Book2 = new("Harry Potter 2","Gren" , 320 , 2002);
-
-Console.WriteLine(Book1.Name);
-Console.WriteLine(Book1.Year);
-Console.WriteLine(Book2.Pages);
-Console.WriteLine(Book2.Color);
+﻿using Book_Store_App.Models;
 
 
-// test test 
+Console.WriteLine("Enter book Name:");
+Book book = new (Console.ReadLine() , 239 );
+
+Console.WriteLine("Enter book Year:");
+book.Year = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine(book.Name + "   " + book.Year);
+
+Book[] shelf = new Book[10];
+shelf[0] = book;
+shelf[1] = book;
+
+Console.WriteLine(shelf.Count(x => x != null));
+
+//foreach (var asd in shelf)
+//{
+//    Console.WriteLine(asd);
+//}
+
+/* Да добавим 2 книги , 4 въпроса , след добавяне да изписва колко книги има в списъка.*/
