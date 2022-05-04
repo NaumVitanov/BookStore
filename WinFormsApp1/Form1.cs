@@ -14,10 +14,10 @@ namespace WinFormsApp1
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            
+            int x = books.Count;
             try
             {
-                if (string.IsNullOrEmpty(textBox1.Text) | (string.IsNullOrEmpty(textBox2.Text)) | (string.IsNullOrEmpty(textBox5.Text)))
+                if (string.IsNullOrEmpty(textBox1.Text) | string.IsNullOrEmpty(textBox2.Text) | string.IsNullOrEmpty(textBox5.Text))
                 {
                     MessageBox.Show("You must fill all of the requerd information to proceed");
                     return;
@@ -35,7 +35,7 @@ namespace WinFormsApp1
 
                 MessageBox.Show("Please enter a whole number in the Year field!");
             }
-            if (books.Count > 0)
+            if (books.Count > x)
             {
                 MessageBox.Show("You have succesufuly added a book!");
             }
