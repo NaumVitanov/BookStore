@@ -35,8 +35,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -55,7 +55,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(117, 128);
+            this.btnAdd.Location = new System.Drawing.Point(117, 165);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 2;
@@ -65,7 +65,7 @@
             // 
             // btnCheck
             // 
-            this.btnCheck.Location = new System.Drawing.Point(209, 128);
+            this.btnCheck.Location = new System.Drawing.Point(209, 165);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(75, 23);
             this.btnCheck.TabIndex = 3;
@@ -80,7 +80,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 15);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Name of the book";           
+            this.label1.Text = "Name of the book";
             // 
             // label2
             // 
@@ -99,27 +99,29 @@
             this.textBox3.Size = new System.Drawing.Size(260, 440);
             this.textBox3.TabIndex = 6;
             // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(117, 249);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(167, 23);
-            this.textBox4.TabIndex = 7;
-            // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(319, 39);
+            this.textBox5.Location = new System.Drawing.Point(148, 126);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(173, 23);
+            this.textBox5.Size = new System.Drawing.Size(100, 23);
             this.textBox5.TabIndex = 8;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(31, 129);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(102, 15);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Genre of the book";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1073, 532);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -143,7 +145,7 @@
         private Label label1;
         private Label label2;
         private TextBox textBox3;
-        private TextBox textBox4;
         private TextBox textBox5;
+        private Label label3;
     }
 }
