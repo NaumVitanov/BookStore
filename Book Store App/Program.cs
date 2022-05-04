@@ -1,7 +1,7 @@
 ﻿using Book_Store_App.Models;
 
 Console.WriteLine("Enter book Name:");
-Book book = new(Console.ReadLine(), 239);
+Book book = new(Console.ReadLine(), 239 , "Idiotski" );
 
 Console.WriteLine("Enter book Year:");
 book.Year = Convert.ToInt32(Console.ReadLine());

@@ -12,46 +12,48 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
-        
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            textBox4.Text = "You added a new book!";
+            
             try
             {
-                Book bookss = new(textBox1.Text, Convert.ToInt32(textBox2.Text));
+                if (string.IsNullOrEmpty(textBox1.Text) | (string.IsNullOrEmpty(textBox2.Text)) | (string.IsNullOrEmpty(textBox5.Text)))
+                {
+                    MessageBox.Show("You must fill all of the requerd information to proceed");
+                    return;
+                }                           
 
-                books.Add(bookss);
+                else
+
+                {
+                    Book books2 = new(textBox1.Text, Convert.ToInt32(textBox2.Text), textBox5.Text);
+
+                    books.Add(books2);
+                }
             }
-
-            catch (Exception )
+            catch (FormatException)
             {
-                MessageBox.Show("You must enter a whole number in the Year field!!!");
-                                                        
-                    }
-            Task.Delay(1 * 1000).Wait();
 
-            textBox4.Text = String.Empty;
+                MessageBox.Show("Please enter a whole number in the Year field!");
+            }
+            if (books.Count > 0)
+            {
+                MessageBox.Show("You have succesufuly added a book!");
+            }
         }
-    
-        
+
         private void btnCheck_Click(object sender, EventArgs e)
-        {           
+        {
             textBox3.Text = String.Empty;
-            
+
             foreach (var Book in books)
             {
-                textBox3.Text =  textBox3.Text  + "Name of the book:" + Book.Name + Environment.NewLine + "Year of the book:" + Book.Year + Environment.NewLine + Environment.NewLine;
-                
+                textBox3.Text = textBox3.Text + "Name of the book:" + Book.Name + Environment.NewLine + "Year of the book:" + Book.Year + Environment.NewLine + "Book Genre:" + Book.Genre + Environment.NewLine + Environment.NewLine;
+
             }
-        }
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
+    
+
+

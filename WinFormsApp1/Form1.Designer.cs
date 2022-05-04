@@ -36,6 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -79,8 +80,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 15);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Name of the book";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Text = "Name of the book";           
             // 
             // label2
             // 
@@ -106,11 +106,19 @@
             this.textBox4.Size = new System.Drawing.Size(167, 23);
             this.textBox4.TabIndex = 7;
             // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(319, 39);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(173, 23);
+            this.textBox5.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1073, 532);
+            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label2);
@@ -121,7 +129,6 @@
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,5 +144,6 @@
         private Label label2;
         private TextBox textBox3;
         private TextBox textBox4;
+        private TextBox textBox5;
     }
 }
