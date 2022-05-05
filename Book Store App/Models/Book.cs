@@ -6,7 +6,7 @@
 		public string Color { get; set; }
 		public int Pages { get; set; }
 		public int Year { get; set; }
-
+		public string Genre { get; set; }
 		public Book(string BookName, string BookColor, int BookPages, int BookYear)
 		{
 			Name = BookName;
@@ -15,10 +15,11 @@
 			Year = BookYear;
 		}
 
-		public Book(string BookName, int BookYear)
+		public Book(string BookName, int BookYear, string GenreName)
 		{
 			Name = BookName;
 			Year = BookYear;
+			Genre = GenreName;
 		}
 	}
 }
